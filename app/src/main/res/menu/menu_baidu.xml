@@ -2,7 +2,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.hts.mydemo.MainActivity">
-    <item android:title="卫星地图" android:id="@+id/map_type" app:showAsAction="never"/>
+    <item
+        android:id="@+id/map_type"
+        android:title="卫星地图"
+        app:showAsAction="never" />
 
-    <item android:title="实时交通(on)" android:id="@+id/map_traffic" app:showAsAction="never"/>
+    <item
+        android:id="@+id/map_traffic"
+        android:title="实时交通(on)"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/map_location"
+        android:title="我的位置"
+        app:showAsAction="never" />
 </menu>
