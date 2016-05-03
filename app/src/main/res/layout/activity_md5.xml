@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <EditText
+
+    android:id="@+id/et_in"
+    android:hint="请输入密码"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_convert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生成md5"/>
+    <TextView
+        android:id="@+id/tv_out"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
