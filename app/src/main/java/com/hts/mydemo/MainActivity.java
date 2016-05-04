@@ -9,11 +9,10 @@ import android.widget.Button;
 import com.hts.mydemo.BaiduMapDemo.BaiduMapActivity;
 import com.hts.mydemo.Banner.BannerActivity;
 import com.hts.mydemo.MD5.MD5Activity;
+import com.hts.mydemo.SplashAndGuide.SplashActivity;
 import com.hts.mydemo.ViewPagerDemo.ViewPagerDemo;
 
 public class MainActivity extends Activity {
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,30 +28,37 @@ public class MainActivity extends Activity {
         Button btnBaiduMap = (Button) findViewById(R.id.btn_baidumap);
         Button btnMD5 = (Button) findViewById(R.id.btn_md5);
         Button btnViewPagerDemo = (Button) findViewById(R.id.btn_viewpager_demo);
+        Button btnSplash = (Button) findViewById(R.id.btn_splash);
         btnBanner.setOnClickListener(listener);
         btnBaiduMap.setOnClickListener(listener);
         btnMD5.setOnClickListener(listener);
         btnViewPagerDemo.setOnClickListener(listener);
+        btnSplash.setOnClickListener(listener);
     }
 
-    private class MyClickListener implements View.OnClickListener{
+    private class MyClickListener implements View.OnClickListener {
 
         @Override
         public void onClick(View view) {
-            switch (view.getId()){
+            Intent intent = null;
+            switch (view.getId()) {
                 case R.id.btn_banner:
-                    startActivity(new Intent(MainActivity.this, BannerActivity.class));
+                    intent = new Intent(MainActivity.this, BannerActivity.class);
                     break;
                 case R.id.btn_baidumap:
-                    startActivity(new Intent(MainActivity.this, BaiduMapActivity.class));
+                    intent = new Intent(MainActivity.this, BaiduMapActivity.class);
                     break;
                 case R.id.btn_md5:
-                    startActivity(new Intent(MainActivity.this, MD5Activity.class));
+                    intent = new Intent(MainActivity.this, MD5Activity.class);
                     break;
                 case R.id.btn_viewpager_demo:
-                    startActivity(new Intent(MainActivity.this, ViewPagerDemo.class));
+                    intent = new Intent(MainActivity.this, ViewPagerDemo.class);
+                    break;
+                case R.id.btn_splash:
+                    intent = new Intent(MainActivity.this, SplashActivity.class);
                     break;
             }
+            startActivity(intent);
         }
     }
 

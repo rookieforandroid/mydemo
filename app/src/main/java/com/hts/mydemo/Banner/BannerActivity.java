@@ -28,7 +28,7 @@ public class BannerActivity extends Activity {
     private LinearLayout mLinearLayout;
 
     // 广告图素材
-    private int[] bannerImages = {R.mipmap.pic_ad_01, R.mipmap.pic_ad_02, R.mipmap.pic_ad_03, R.mipmap.pic_ad_04};
+    private int[] bannerImages = {R.drawable.banner_ad_01, R.drawable.banner_ad_02, R.drawable.banner_ad_03, R.drawable.banner_ad_04};
     // 广告语
     private String[] bannerTexts = {"因为专业 所以卓越", "坚持创新 行业领跑", "诚信 专业 双赢", "精细 和谐 大气 开放"};
 

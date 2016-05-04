@@ -82,7 +82,7 @@ public class BaiduMapActivity extends Activity {
 
         mLocationClient.setLocOption(options);
         //初始化图标
-        mIconLocation = BitmapDescriptorFactory.fromResource(R.mipmap.navi_map_gps_locked);
+        mIconLocation = BitmapDescriptorFactory.fromResource(R.drawable.baidudemo_orientation);
         //初始化传感监听器
         myOrientationListener = new MyOrientationListener(context);
         myOrientationListener.setOnOrientationListener(new OnOrientationListener() {

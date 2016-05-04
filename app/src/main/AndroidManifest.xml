@@ -16,7 +16,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -28,7 +28,7 @@
             android:enabled="true"
             android:process=":remote">
             <intent-filter>
-                <action android:name="com.baidu.location.service_v2.2"/>
+                <action android:name="com.baidu.location.service_v2.2" />
             </intent-filter>
 
         </service>
@@ -46,6 +46,15 @@
         <activity android:name=".BaiduMapDemo.BaiduMapActivity" />
         <activity android:name=".MD5.MD5Activity" />
         <activity android:name=".ViewPagerDemo.ViewPagerDemo" />
+
+        <!--闪屏页面和引导页面-->
+        <activity
+            android:name=".SplashAndGuide.SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".SplashAndGuide.SplashGuideActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name=".SplashAndGuide.SplashHomeActivity" />
 
     </application>
 
