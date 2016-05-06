@@ -25,4 +25,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.3.0'
     compile 'com.android.support:design:23.3.0'
     compile files('libs/BaiduLBS_Android.jar')
+    compile project(':SlidingMenu')//加上这句～
 }

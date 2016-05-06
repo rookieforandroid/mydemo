@@ -1,4 +1,4 @@
-package com.hts.mydemo.Banner;
+package com.hts.mydemo.banner;
 
 
 import android.support.v4.view.PagerAdapter;

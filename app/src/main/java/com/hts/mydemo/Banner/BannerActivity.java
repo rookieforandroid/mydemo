@@ -1,10 +1,12 @@
-package com.hts.mydemo.Banner;
+package com.hts.mydemo.banner;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.SystemClock;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -33,11 +35,11 @@ public class BannerActivity extends Activity {
     private String[] bannerTexts = {"因为专业 所以卓越", "坚持创新 行业领跑", "诚信 专业 双赢", "精细 和谐 大气 开放"};
 
 
-
     // 圆圈标志位
     private int pointIndex = 0;
     // 线程标志
     private boolean isStop = false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,9 +49,9 @@ public class BannerActivity extends Activity {
         initData();
         initAction();
 
-        // 开启新线程，2.5秒一次更新Banner
-        new Thread(new Runnable() {
 
+        //开启子线程轮播
+        new Thread(new Runnable() {
             @Override
             public void run() {
                 while (!isStop) {
@@ -64,6 +66,7 @@ public class BannerActivity extends Activity {
                 }
             }
         }).start();
+
     }
 
     /**
@@ -115,6 +118,7 @@ public class BannerActivity extends Activity {
         mLinearLayout = (LinearLayout) findViewById(R.id.points);
     }
 
+
     //实现VierPager监听器接口
     class BannerListener implements OnPageChangeListener {
 
@@ -128,6 +132,7 @@ public class BannerActivity extends Activity {
 
         @Override
         public void onPageSelected(int position) {
+
             int newPosition = position % bannerImages.length;
             mTextView.setText(bannerTexts[newPosition]);
             mLinearLayout.getChildAt(newPosition).setEnabled(true);

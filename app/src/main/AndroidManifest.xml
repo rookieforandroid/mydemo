@@ -42,20 +42,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Banner.BannerActivity" />
-        <activity android:name=".BaiduMapDemo.BaiduMapActivity" />
-        <activity android:name=".MD5.MD5Activity" />
-        <activity android:name=".ViewPagerDemo.ViewPagerDemo" />
+        <activity android:name=".banner.BannerActivity" />
+        <activity android:name=".baidumapdemo.BaiduMapActivity" />
+        <activity android:name=".md5.MD5Activity" />
+        <activity android:name=".viewpagerdemo.ViewPagerDemo" />
 
         <!--闪屏页面和引导页面-->
         <activity
-            android:name=".SplashAndGuide.SplashActivity"
+            android:name=".splashandguide.SplashActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
-            android:name=".SplashAndGuide.SplashGuideActivity"
+            android:name=".splashandguide.SplashGuideActivity"
             android:theme="@android:style/Theme.NoTitleBar" />
-        <activity android:name=".SplashAndGuide.SplashHomeActivity" />
+        <activity android:name=".splashandguide.SplashHomeActivity" />
 
+        <activity android:name=".slidingmenudemo.SlidingMenuDemoActivity"/>
     </application>
 
 </manifest>

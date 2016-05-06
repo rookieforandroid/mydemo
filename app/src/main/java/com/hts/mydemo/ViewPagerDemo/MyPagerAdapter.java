@@ -1,4 +1,4 @@
-package com.hts.mydemo.ViewPagerDemo;
+package com.hts.mydemo.viewpagerdemo;
 
 
 import android.support.v4.app.Fragment;

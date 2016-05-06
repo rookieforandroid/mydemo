@@ -1,4 +1,4 @@
-package com.hts.mydemo.SplashAndGuide;
+package com.hts.mydemo.splashandguide;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,7 +12,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import com.hts.mydemo.R;
 

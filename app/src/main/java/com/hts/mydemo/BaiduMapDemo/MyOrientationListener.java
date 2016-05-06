@@ -1,4 +1,4 @@
-package com.hts.mydemo.BaiduMapDemo;
+package com.hts.mydemo.baidumapdemo;
 
 import android.content.Context;
 import android.hardware.Sensor;

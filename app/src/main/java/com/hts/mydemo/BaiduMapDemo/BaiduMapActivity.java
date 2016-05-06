@@ -1,4 +1,4 @@
-package com.hts.mydemo.BaiduMapDemo;
+package com.hts.mydemo.baidumapdemo;
 
 
 import android.app.Activity;
@@ -24,7 +24,7 @@ import com.baidu.mapapi.map.MyLocationConfiguration.LocationMode;
 import com.baidu.mapapi.map.MyLocationData;
 import com.baidu.mapapi.model.LatLng;
 import com.hts.mydemo.R;
-import com.hts.mydemo.BaiduMapDemo.MyOrientationListener.OnOrientationListener;
+import com.hts.mydemo.baidumapdemo.MyOrientationListener.OnOrientationListener;
 
 
 public class BaiduMapActivity extends Activity {

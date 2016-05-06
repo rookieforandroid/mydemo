@@ -1,4 +1,4 @@
-package com.hts.mydemo.SplashAndGuide;
+package com.hts.mydemo.splashandguide;
 
 import android.app.Activity;
 import android.content.Context;

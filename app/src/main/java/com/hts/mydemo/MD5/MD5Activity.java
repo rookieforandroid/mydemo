@@ -1,4 +1,4 @@
-package com.hts.mydemo.MD5;
+package com.hts.mydemo.md5;
 
 import android.app.Activity;
 import android.os.Bundle;

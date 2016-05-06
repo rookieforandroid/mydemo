@@ -6,11 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.hts.mydemo.BaiduMapDemo.BaiduMapActivity;
-import com.hts.mydemo.Banner.BannerActivity;
-import com.hts.mydemo.MD5.MD5Activity;
-import com.hts.mydemo.SplashAndGuide.SplashActivity;
-import com.hts.mydemo.ViewPagerDemo.ViewPagerDemo;
+import com.hts.mydemo.baidumapdemo.BaiduMapActivity;
+import com.hts.mydemo.banner.BannerActivity;
+import com.hts.mydemo.md5.MD5Activity;
+import com.hts.mydemo.slidingmenudemo.SlidingMenuDemoActivity;
+import com.hts.mydemo.splashandguide.SplashActivity;
+import com.hts.mydemo.viewpagerdemo.ViewPagerDemo;
 
 public class MainActivity extends Activity {
 
@@ -29,11 +30,15 @@ public class MainActivity extends Activity {
         Button btnMD5 = (Button) findViewById(R.id.btn_md5);
         Button btnViewPagerDemo = (Button) findViewById(R.id.btn_viewpager_demo);
         Button btnSplash = (Button) findViewById(R.id.btn_splash);
+        Button btnSlidingMenu = (Button) findViewById(R.id.btn_slidingmenu);
+
         btnBanner.setOnClickListener(listener);
         btnBaiduMap.setOnClickListener(listener);
         btnMD5.setOnClickListener(listener);
         btnViewPagerDemo.setOnClickListener(listener);
         btnSplash.setOnClickListener(listener);
+        btnSlidingMenu.setOnClickListener(listener);
+
     }
 
     private class MyClickListener implements View.OnClickListener {
@@ -56,6 +61,9 @@ public class MainActivity extends Activity {
                     break;
                 case R.id.btn_splash:
                     intent = new Intent(MainActivity.this, SplashActivity.class);
+                    break;
+                case R.id.btn_slidingmenu:
+                    intent = new Intent(MainActivity.this, SlidingMenuDemoActivity.class);
                     break;
             }
             startActivity(intent);
